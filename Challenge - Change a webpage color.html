@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background color</title>
+</head>
+<style>
+  #container{
+      background-color: aqua;
+  }
+  #button{
+      font-size: 70px;
+      font-weight: bold;
+      border: 6px solid black;
+      position: absolute;
+      margin-top: 200px;
+      margin-left: 300px;
+     
+  }
+</style>
+<body id = "body">
+    <button id="button"> Click to change color </button>
+</body>
+<script>
+
+    //color array selection
+    let colors = ['purple', 'yellow', 'orange', 'brown', 'red', 'blue', 'green','black']
+
+    //get button
+    let button = document.getElementById ("button");
+
+    //add event listener
+    button.addEventListener("click", function onClick (event){
+        //randomizer
+        var randomColor = colors [Math.floor(Math.random()* colors.length)]
+        
+        let body = document.getElementById ("body")
+
+        body.style.background = randomColor
+    })
+
+</script>
+
+</html>
