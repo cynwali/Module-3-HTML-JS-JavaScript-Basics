@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Cars Listing</title>
+</head>
+<body>
+
+    <script>
+        //define array
+        var cars = ['toyota', 'honda', 'mazda', 'mitsubishi','tesla','lexus']
+
+        // log first item and last item into console
+        console.log(cars[0],cars[cars.length-1]);
+
+        //add an item to the array and log into console
+        cars.push('mercedes-benz')
+        console.log(cars)
+
+        //loop through all items and log them to console
+        for(i=0; i<cars.length; i++){
+               console.log("My car is a", cars[i]);
+           }
+
+    </script>   
+</body>
+</html>
